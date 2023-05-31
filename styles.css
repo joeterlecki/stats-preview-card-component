@@ -26,6 +26,8 @@ body {
   flex-direction: row;
   border: 8px;
   overflow: hidden;
+  border-radius: 8px;
+  max-width: 1110px;
 }
 
 .card-copy {
@@ -43,34 +45,90 @@ h1 {
   font-size: 36px;
 }
 
+h1 span {
+  color: hsl(277, 64%, 61%);
+}
+
 .card-copy > p {
   font-size: 15px;
   line-height: 25px;
   padding-right: 70px;
+  opacity: 60%;
 }
 
 .stats {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 70px;
 }
 
 .stats p {
   font-size: 12px;
+  font-family: "Lexend Deca", sans-serif;
+  opacity: 60%;
 }
 
 h2 {
   font-size: 24px;
   line-height: 30px;
+  margin-bottom: 5px;
 }
 
-img {
-  width: 45%;
-}
-
-/* .card-img {
+.card-img {
   background-color: hsl(277, 64%, 61%);
+  opacity: 70%;
 }
 
 img {
   height: 100%;
   mix-blend-mode: multiply;
-} */
+}
+
+@media only screen and (max-width: 1060px) {
+  .card {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 327px;
+    height: 780px;
+  }
+
+  .card-copy {
+    padding: 31px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .card-copy > p {
+    padding: 0;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 240px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .stats {
+    flex-direction: column;
+    padding: 0;
+    height: 100%;
+    justify-content: flex-end;
+    gap: 24px;
+  }
+}
