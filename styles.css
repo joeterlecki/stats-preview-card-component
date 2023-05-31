@@ -86,10 +86,28 @@ img {
   .card {
     width: 330px;
     height: 780px;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-copy {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 28px;
   }
 
   .card-img {
     height: 240px;
+    width: 330px;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
