@@ -28,6 +28,7 @@ body {
   overflow: hidden;
   border-radius: 8px;
   max-width: 1110px;
+  height: 450px;
 }
 
 .card-copy {
